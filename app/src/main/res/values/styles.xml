@@ -5,7 +5,7 @@
         <item name="android:layout_width">90dp</item>
         <item name="android:layout_height">90dp</item>
         <item name="android:layout_marginStart">44dp</item>
-        <item name="android:background">@drawable/background_shape</item>
+        <item name="android:background">@drawable/button_gackground</item>
     </style>
 
 </resources>

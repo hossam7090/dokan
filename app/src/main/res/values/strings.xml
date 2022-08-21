@@ -16,20 +16,33 @@
     <string name="Forage_price">12$</string>
     <string name="Forage_button_name">Details</string>
     <string name="eldokan">Eldokan</string>
-    <string name="category">categories</string>
-    <string name="product_name">product name</string>
-    <string name="product_description">product description</string>
-    <string name="product_price">product price</string>
-    <string name="enter_product_name">enter product name</string>
-    <string name="enter_product_description">enter product description</string>
-    <string name="enter_product_price">enter product price</string>
-    <string name="enter_product_category">enter product category</string>
+    <string name="catoragy">categories</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="remember_me">Remember me</string>
+
+
+    <string name="home_page">Home Page</string>
+    <string name="email">ُEmail address or phone number</string>
+    <string name="loginbut">Log in</string>
+    <string name="passhint">Password</string>
+    <string name="passforget">Forgotten password?</string>
+    <string name="remcheck">Remember me</string>
+    <string name="createaccbut">Create New Account</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="mobile_number_or_email_address">Mobile number or email address</string>
+    <string name="date">Date</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="resetPassword">Send reset password code</string>
+    <string name="resetEmail">Email address or phone number</string>
+    <string name="reset">Please enter your email address or mobile number to search for your account.</string>
+    <string name="loading">Loading...</string>
+    <string name="register">Register</string>
     <string-array name="catagory">
         <item>meats</item>
         <item>fruits and vegtables</item>
         <item>grocery</item>
         <item>milks</item>
     </string-array>
-
-
 </resources>

@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/10/Desktop/AlDokan/app/src/main/res/drawable/button_gackground.xml" value="0.1105" />
+        <entry key="..\:/Users/10/Desktop/AlDokan/app/src/main/res/layout/activity_adminpag.xml" value="0.152" />
+        <entry key="..\:/Users/10/Desktop/AlDokan/app/src/main/res/layout/activity_forget.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/10/Desktop/AlDokan/app/src/main/res/layout/activity_homepage.xml" value="0.25" />
+        <entry key="..\:/Users/10/Desktop/AlDokan/app/src/main/res/layout/activity_login.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/10/Desktop/AlDokan/app/src/main/res/layout/activity_meats.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/10/Desktop/AlDokan/app/src/main/res/layout/activity_registration.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/10/Desktop/AlDokan/app/src/main/res/layout/dropdownmnuo.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/10/Desktop/AlDokan/app/src/main/res/menu/optional_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/AlDokan/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/AlDokan/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/AlDokan/app/src/main/res/layout/activity_cart.xml" value="0.2" />
@@ -15,12 +24,6 @@
         <entry key="..\:/Users/Dell/AndroidStudioProjects/AlDokan/app/src/main/res/layout/activity_product_details.xml" value="0.2" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/AlDokan/app/src/main/res/layout/activity_vegetables_and_fruits.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/AlDokan/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2265" />
-        <entry key="..\:/Users/LENOVO/Desktop/AlDokan/app/src/main/res/drawable/background_shape.xml" value="0.127" />
-        <entry key="..\:/Users/LENOVO/Desktop/AlDokan/app/src/main/res/font/black_ops_one.xml" value="0.1453125" />
-        <entry key="..\:/Users/LENOVO/Desktop/AlDokan/app/src/main/res/layout/activity_admin_page.xml" value="0.22644927536231885" />
-        <entry key="..\:/Users/LENOVO/Desktop/AlDokan/app/src/main/res/layout/activity_home_page.xml" value="0.2" />
-        <entry key="..\:/Users/LENOVO/Desktop/AlDokan/app/src/main/res/menu/dropdown_menu.xml" value="0.259375" />
-        <entry key="..\:/Users/LENOVO/Desktop/AlDokan/app/src/main/res/xml/background_shape.xml" value="0.11614583333333334" />
       </map>
     </option>
   </component>
@@ -29,5 +32,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

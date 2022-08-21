@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.aldokan" >
+    package="com.example.aldokan">
 
     <application
         android:allowBackup="true"
@@ -12,12 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlDokan"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name=".admin_page"
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forget"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
             android:exported="false" />
         <activity
             android:name=".DairyAndDrinks"
+            android:exported="false" />
+        <activity
+            android:name=".adminpag"
             android:exported="false" />
         <activity
             android:name=".ConfirmOrder"
@@ -26,8 +35,8 @@
             android:name=".ProductDetails"
             android:exported="false" />
         <activity
-            android:name=".home_page"
-            android:exported="true" >
+            android:name=".login"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -52,6 +61,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
