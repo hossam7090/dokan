@@ -23,8 +23,8 @@
 
         android:id="@+id/button"
         android:drawableLeft="@drawable/meat3"
-        android:paddingLeft="10dip"
-        android:paddingRight="10dip"
+        android:paddingLeft="5dip"
+
         style="@style/Buttonstyle"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@+id/button2"
@@ -34,7 +34,8 @@
 
     <Button
         android:id="@+id/button2"
-
+        android:drawableLeft="@drawable/grocery"
+        android:paddingLeft="5dip"
 
         style="@style/Buttonstyle"
         android:layout_marginEnd="20dp"
@@ -56,7 +57,8 @@
     <Button
 
         android:id="@+id/button4"
-
+        android:drawableLeft="@drawable/feeds"
+        android:paddingLeft="5dip"
         style="@style/Buttonstyle"
         android:layout_marginTop="60dp"
         app:layout_constraintEnd_toStartOf="@+id/button5"
@@ -66,7 +68,8 @@
 
     <Button
         android:id="@+id/button5"
-
+        android:drawableLeft="@drawable/vegetable"
+        android:paddingLeft="5dip"
         style="@style/Buttonstyle"
         android:layout_marginEnd="20dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/button4"
@@ -77,6 +80,8 @@
     <Button
         android:id="@+id/button6"
         style="@style/Buttonstyle"
+        android:drawableLeft="@drawable/fruit"
+        android:paddingLeft="5dip"
         android:layout_marginStart="20dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/button4"
         app:layout_constraintEnd_toStartOf="@+id/button4"
@@ -97,5 +102,239 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Grocery_bo1"
+                    android:layout_width="78dp"
+                    style="@style/Buttonstyle"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+
+                    android:text="@string/Grocery_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Grocery_price2"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Grocery_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Grocery_name1"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Grocery_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Grocery_image"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Grocery_bo2"
+                    android:layout_width="78dp"
+                    style="@style/Buttonstyle"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+
+                    android:text="@string/Grocery_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Grocery_price1"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Grocery_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Grocery_name2"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Grocery_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Grocery_image2"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Grocery_bo3"
+                    android:layout_width="78dp"
+                    style="@style/Buttonstyle"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+
+                    android:text="@string/Grocery_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Grocery_price3"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Grocery_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Grocery_name3"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Grocery_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Grocery_image1"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img2" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="recommended products"
+        android:textColor="#4C2109"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

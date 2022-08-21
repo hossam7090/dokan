@@ -39,6 +39,7 @@
     <string name="reset">Please enter your email address or mobile number to search for your account.</string>
     <string name="loading">Loading...</string>
     <string name="register">Register</string>
+    <string name="leave_your_message_here">leave your message here</string>
     <string-array name="catagory">
         <item>meats</item>
         <item>fruits and vegtables</item>

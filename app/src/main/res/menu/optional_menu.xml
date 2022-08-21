@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/share"
-        android:title="log out" />
+        android:id="@+id/cart"
+        android:icon="@drawable/cart"
+        android:title="Cart"
+        android:visible="true"
+        app:showAsAction="ifRoom"
+        />
     <item
         android:id="@+id/contact_us"
         android:title="contact us" />
 
     <item
-        android:id="@+id/complaints"
-        android:title="complaints"/>
+        android:id="@+id/about_us"
+        android:title="about us"/>
+    <item
+        android:id="@+id/log_out"
+        android:title="log out" />
 
 </menu>
