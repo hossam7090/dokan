@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/C_layout_color"
+    tools:context=".VegetablesAndFruits">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/R_layout_color"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Veg_and_Fruits_bo1"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/Button_background_color"
+                    android:text="@string/Veg_fruits_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_price1"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Veg_fruits_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_name1"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Veg_fruits_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Veg_and_Fruits_image1"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/R_layout_color"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Veg_and_Fruits_bo2"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/Button_background_color"
+                    android:text="@string/Veg_fruits_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_price2"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Veg_fruits_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_name2"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Veg_fruits_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Veg_and_Fruits_image2"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/R_layout_color"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Veg_and_Fruits_bo3"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/Button_background_color"
+                    android:text="@string/Veg_fruits_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_price3"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Veg_fruits_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_name3"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Veg_fruits_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Veg_and_Fruits_image3"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/R_layout_color"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Veg_and_Fruits_bo4"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/Button_background_color"
+                    android:text="@string/Veg_fruits_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_price4"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Veg_fruits_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_name4"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Veg_fruits_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Veg_and_Fruits_image4"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/R_layout_color"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Veg_and_Fruits_bo5"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/Button_background_color"
+                    android:text="@string/Veg_fruits_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_price5"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Veg_fruits_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_name5"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Veg_fruits_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Veg_and_Fruits_image5"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/R_layout_color"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Veg_and_Fruits_bo6"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/Button_background_color"
+                    android:text="@string/Veg_fruits_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_price6"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Veg_fruits_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_name6"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Veg_fruits_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Veg_and_Fruits_image6"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/R_layout_color"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Veg_and_Fruits_bo7"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/Button_background_color"
+                    android:text="@string/Veg_fruits_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_price7"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Veg_fruits_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_name7"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Veg_fruits_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Veg_and_Fruits_image7"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/R_layout_color"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Veg_and_Fruits_bo8"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/Button_background_color"
+                    android:text="@string/Veg_fruits_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_price8"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Veg_fruits_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_name8"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Veg_fruits_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Veg_and_Fruits_image8"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/R_layout_color"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Veg_and_Fruits_bo9"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/Button_background_color"
+                    android:text="@string/Veg_fruits_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_price9"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Veg_fruits_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_name9"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Veg_fruits_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Veg_and_Fruits_image9"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/R_layout_color"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/Veg_and_Fruits_bo10"
+                    android:layout_width="78dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/Button_background_color"
+                    android:text="@string/Veg_fruits_button_name"
+                    android:textAllCaps="false"
+                    android:textColor="@color/Button_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_price10"
+                    android:layout_width="115dp"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="97dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/Veg_fruits_price"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/Veg_and_Fruits_name10"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="222dp"
+                    android:layout_marginBottom="42dp"
+                    android:text="@string/Veg_fruits_name"
+                    android:textColor="@color/name_text_color" />
+
+                <ImageView
+                    android:id="@+id/Veg_and_Fruits_image10"
+                    android:layout_width="144dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="238dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/img4" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

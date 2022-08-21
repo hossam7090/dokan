@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Dairy_name">Dairy_Drinks</string>
+    <string name="Dairy_price">25$</string>
+    <string name="Dairy_button_name">Details</string>
+    <string name="Meats_name">Meats</string>
+    <string name="Meats_price">100$</string>
+    <string name="Meats_button_name">Details</string>
+    <string name="Veg_fruits_name">Vegetables_Fruits</string>
+    <string name="Veg_fruits_price">10$</string>
+    <string name="Veg_fruits_button_name">Details</string>
+    <string name="Grocery_name">Grocery</string>
+    <string name="Grocery_price">15$</string>
+    <string name="Grocery_button_name">Details</string>
+    <string name="Forage_name">Forage</string>
+    <string name="Forage_price">12$</string>
+    <string name="Forage_button_name">Details</string>
+    <string name="eldokan">Eldokan</string>
+    <string name="category">categories</string>
+    <string name="product_name">product name</string>
+    <string name="product_description">product description</string>
+    <string name="product_price">product price</string>
+    <string name="enter_product_name">enter product name</string>
+    <string name="enter_product_description">enter product description</string>
+    <string name="enter_product_price">enter product price</string>
+    <string name="enter_product_category">enter product category</string>
+    <string-array name="catagory">
+        <item>meats</item>
+        <item>fruits and vegtables</item>
+        <item>grocery</item>
+        <item>milks</item>
+    </string-array>
+
+
+</resources>
