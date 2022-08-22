@@ -8,4 +8,14 @@
         <item name="android:background">@drawable/button_gackground</item>
     </style>
 
+    <style name="text_header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:fontFamily">@font/black_ops_one</item>
+        <item name="android:textColor">#4C2109</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>

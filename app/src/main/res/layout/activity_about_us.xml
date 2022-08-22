@@ -10,11 +10,10 @@
 
     <ImageView
         android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:src="@drawable/team"
-        android:scaleType="centerInside"
+        android:layout_height="300dp"
         android:layout_gravity="center"
-        />
+        android:scaleType="centerInside"
+        android:src="@drawable/team" />
 
     <LinearLayout
         android:layout_width="match_parent"

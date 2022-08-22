@@ -24,13 +24,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        style="@style/text_header"
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
 
         android:text="product name"
-        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -38,13 +37,13 @@
     <TextView
         android:id="@+id/decription"
         android:layout_width="wrap_content"
+        style="@style/text_header"
 
         android:layout_height="wrap_content"
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="product  id"
-        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonId" />
@@ -56,11 +55,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        style="@style/text_header"
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="price"
-        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
@@ -72,11 +71,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        style="@style/text_header"
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="catagory"
-        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonPrice" />
@@ -146,6 +145,38 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="199dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersoncatagory" />
+
+    <Button
+        android:id="@+id/gallery"
+        style="@style/Buttonstyle"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="choose image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersoncatagory" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/Buttonstyle"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/gallery"
+        app:layout_constraintVertical_bias="0.524" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
