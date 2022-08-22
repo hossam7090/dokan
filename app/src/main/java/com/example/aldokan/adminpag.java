@@ -6,6 +6,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -18,14 +20,22 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
+
+import com.example.aldokan.Tables.ProductsDB;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
 
 public class adminpag extends AppCompatActivity {
     ImageView imageView;
+    Database db ;
+    ProductsDB product ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adminpag);
-
+        db = new Database(this);
 
         Button save = findViewById(R.id.button8);
         Button gallery = findViewById(R.id.gallery);
@@ -33,10 +43,10 @@ public class adminpag extends AppCompatActivity {
         EditText editText1 = findViewById(R.id.editTextTextPersonId);
         EditText editText2 = findViewById(R.id.editTextTextPersoncatagory);
         EditText editText3 = findViewById(R.id.editTextTextPersonPrice);
-        EditText editText4 = findViewById(R.id.editTextTextPersonName);
         gallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(intent , 3);
             }
@@ -45,11 +55,27 @@ public class adminpag extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                editText1.setText("");
-                editText2.setText("");
-                editText3.setText("");
-                editText4.setText("");
-                imageView.setImageURI(null);
+                String name =editText1.getText().toString();
+                String category = editText2.getText().toString();
+                double price = Double.parseDouble(editText3.getText().toString());
+                byte[] image = imageviewintobyte(imageView);
+
+                if(!name.isEmpty()&&!category.isEmpty()&&!editText3.getText().toString().isEmpty()){
+
+                    product = new ProductsDB(name.trim(),price,image,category.trim());
+                    if(db.insertProduct(product)){
+                        Toast.makeText(adminpag.this, "saving successful !", Toast.LENGTH_SHORT).show();
+
+                    }
+
+                    editText1.setText("");
+                    editText2.setText("");
+                    editText3.setText("");
+                    imageView.setImageURI(null);
+
+                }
+
+
             }
         });
 
@@ -78,4 +104,14 @@ public class adminpag extends AppCompatActivity {
         startActivity(M);
         return true;
     }
+
+    private byte[] imageviewintobyte(ImageView image)
+    {
+        Bitmap bitmab = ((BitmapDrawable)image.getDrawable()).getBitmap();
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmab.compress(Bitmap.CompressFormat.PNG,100,stream);
+        byte[] byteArray = stream.toByteArray();
+        return byteArray;
+    }
+
 }

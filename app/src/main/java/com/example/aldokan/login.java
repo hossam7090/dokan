@@ -35,34 +35,52 @@ public class login extends AppCompatActivity {
         btnNewAccount = findViewById(R.id.btn_createNewAccount);
         txForgetPassword = findViewById(R.id.tx_forgetPassword);
         db = new Database(this);
+
         email = findViewById(R.id.et_logemail);
         password = findViewById(R.id.et_logpassword);
         login = findViewById(R.id.btn_login);
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String em = email.getText().toString();
                 String n = password.getText().toString();
-                if (em.isEmpty()&&!n.isEmpty()) {
-                    Toast.makeText(login.this, "Please, enter your email or number...", Toast.LENGTH_SHORT).show();
-                }else if (!em.isEmpty()&&n.isEmpty()){
+                String admin = "admin";
+
+                if(em.equals(admin) && n.equals(admin)){
+                    Toast.makeText(login.this, "Login Successful...", Toast.LENGTH_SHORT).show();
+                    Intent Y = new Intent(getApplicationContext(), adminpag.class);
+                    startActivity(Y);
+                }
+                else if (!em.isEmpty()&&n.isEmpty()){
                     Toast.makeText(login.this, "Please, enter your password...", Toast.LENGTH_SHORT).show();
-                }else if(em.isEmpty()&&n.isEmpty()){
+                }else if(em.isEmpty()&&n.isEmpty()) {
                     Toast.makeText(login.this, "Please, enter your data...", Toast.LENGTH_SHORT).show();
-                }else{
+                }else if (em.isEmpty()&&!n.isEmpty()) {
+                    Toast.makeText(login.this, "Please, enter your email or number...", Toast.LENGTH_SHORT).show();
+                }
 
-                   Log.d("TAG","getCustomer called");
 
-
-                        Intent Y=new Intent(getApplicationContext(),Homepage.class);
-                        startActivity(Y);
-                        Toast.makeText(login.this, "Login Successful...", Toast.LENGTH_SHORT).show();
-
+                else{
+                   Log.d("TAG",em + " " +n);
 
 
 
 
+
+//                        else {
+//                            ArrayList<CustomersDB> aCus = db.getCustomer(em);
+//
+//                            if (aCus.get(0).getCPassword() == n) {
+//                                Intent Y = new Intent(getApplicationContext(), Homepage.class);
+//                                startActivity(Y);
+//                                Toast.makeText(login.this, "Login Successful...", Toast.LENGTH_SHORT).show();
+//                            } else
+//                                Toast.makeText(login.this, "Login UnSuccessful...", Toast.LENGTH_SHORT).show();
+//
+//
+//                        }
 
                 }
             }

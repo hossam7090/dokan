@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class Database extends SQLiteOpenHelper {
     public static final String DB_name = "Database";
-    public static final int DB_Version = 3;
+    public static final int DB_Version = 1;
     public static final String Products_Table_Name = "Products";
 
     public static final String Products_cln_Productsid = "Productsid";
@@ -126,14 +126,14 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
 
-        values.put(Products_cln_ProductsName, Product.getPName());
+        //values.put(Products_cln_ProductsName, Product.getPName());
         values.put(Products_cln_ProductsPrice, Product.getPPrice());
         values.put(Products_cln_ProductsImage, Product.getPImage());
         values.put(Products_cln_ProductsCategory, Product.getPCategory());
 
-        String args[] = {Product.getPid() + ""};
-        int result = db.update(Products_Table_Name, values, "id=?", args);
-        return result > 1;
+        String args[] = {Product.getPName() + ""};
+        int result = db.update(Products_Table_Name, values, "ProductsName=?", args);
+        return result > 0;
     }
 
 
@@ -142,8 +142,8 @@ public class Database extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
 
 
-        String args[] = {Product.getPid() + ""};
-        int result = db.delete(Products_Table_Name, "id=?", args);
+        String args[] = {Product.getPName() + ""};
+        int result = db.delete(Products_Table_Name, "ProductsName=?", args);
         return result > 0;
     }
 
@@ -212,7 +212,7 @@ public class Database extends SQLiteOpenHelper {
 
 
     public boolean insertCustomer(CustomersDB Customer) {
-        SQLiteDatabase db = getWritableDatabase();
+        SQLiteDatabase db =this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(Customers_cln_CustomersFName, Customer.getCFname());
         values.put(Customers_cln_CustomersLName, Customer.getCLName());
@@ -230,13 +230,13 @@ public class Database extends SQLiteOpenHelper {
 
         values.put(Customers_cln_CustomersFName, Customer.getCFname());
         values.put(Customers_cln_CustomersLName, Customer.getCLName());
-        values.put(Customers_cln_CustomersPhoneOREmail, Customer.getCPhoneOREmail());
+        //values.put(Customers_cln_CustomersPhoneOREmail, Customer.getCPhoneOREmail());
         values.put(Customers_cln_CustomersPassword, Customer.getCPassword());
         values.put(Customers_cln_CustomersGander, Customer.getCGander());
 
-        String args[] = {Customer.getCid() + ""};
-        int result = db.update(Customers_Table_Name, values, "id=?", args);
-        return result > 1;
+        String args[] = {Customer.getCPhoneOREmail() + ""};
+        int result = db.update(Customers_Table_Name, values, "CustomersPhoneOREmail=?", args);
+        return result > 0;
     }
 
 
@@ -245,8 +245,8 @@ public class Database extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
 
 
-        String args[] = {Customer.getCid() + ""};
-        int result = db.delete(Customers_Table_Name, "id=?", args);
+        String args[] = {Customer.getCPhoneOREmail() + ""};
+        int result = db.delete(Customers_Table_Name, "CustomersPhoneOREmail=?", args);
         return result > 0;
     }
 
@@ -316,9 +316,6 @@ public class Database extends SQLiteOpenHelper {
         return customers;
     }
 
-
-
-
     public boolean insertConfirmOrder(ConfirmOrdersDB Confirm) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -335,14 +332,14 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
 
-        values.put(confirmOrder_tb_name, Confirm.getCOName());
+        //values.put(confirmOrder_tb_name, Confirm.getCOName());
         values.put(confirmOrder_cln_COPhone, Confirm.getCOPhone());
         values.put(confirmOrder_cln_COAddress, Confirm.getCOAddress());
         values.put(confirmOrder_cln_COCity, Confirm.getCOCity());
 
-        String args[] = {Confirm.getCOid() + ""};
-        int result = db.update(ConfirmOrders_Table_Name, values, "id=?", args);
-        return result > 1;
+        String args[] = {Confirm.getCOName() + ""};
+        int result = db.update(ConfirmOrders_Table_Name, values, "COName=?", args);
+        return result > 0;
     }
 
 
@@ -351,8 +348,8 @@ public class Database extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
 
 
-        String args[] = {Confirm.getCOid() + ""};
-        int result = db.delete(ConfirmOrders_Table_Name, "id=?", args);
+        String args[] = {Confirm.getCOName() + ""};
+        int result = db.delete(ConfirmOrders_Table_Name, "COName=?", args);
         return result > 0;
     }
 
@@ -436,14 +433,14 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
 
-        values.put(Cart_cln_CartName, Cart.getCartName());
+        //values.put(Cart_cln_CartName, Cart.getCartName());
         values.put(Cart_cln_CartPrice, Cart.getCartPrice());
         values.put(Cart_cln_CartImage, Cart.getCartImage());
         values.put(Cart_cln_CartQuantity, Cart.getCartQuantity());
 
-        String args[] = {Cart.getCartid() + ""};
-        int result = db.update(Products_Table_Name, values, "id=?", args);
-        return result > 1;
+        String args[] = {Cart.getCartName() + ""};
+        int result = db.update(Products_Table_Name, values, "CartName=?", args);
+        return result > 0;
     }
 
 
@@ -452,8 +449,8 @@ public class Database extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
 
 
-        String args[] = {Cart.getCartid() + ""};
-        int result = db.delete(Cart_tb_name, "id=?", args);
+        String args[] = {Cart.getCartName() + ""};
+        int result = db.delete(Cart_tb_name, "CartName=?", args);
         return result > 0;
     }
 
