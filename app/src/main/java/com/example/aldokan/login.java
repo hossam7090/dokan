@@ -7,14 +7,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.aldokan.Tables.CustomersDB;
+
+import java.util.ArrayList;
+
 
 public class login extends AppCompatActivity {
+
+    Database db ;
 
     boolean pressToBack = false ;
 
@@ -27,7 +34,7 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         btnNewAccount = findViewById(R.id.btn_createNewAccount);
         txForgetPassword = findViewById(R.id.tx_forgetPassword);
-
+        db = new Database(this);
         email = findViewById(R.id.et_logemail);
         password = findViewById(R.id.et_logpassword);
         login = findViewById(R.id.btn_login);
@@ -44,9 +51,19 @@ public class login extends AppCompatActivity {
                 }else if(em.isEmpty()&&n.isEmpty()){
                     Toast.makeText(login.this, "Please, enter your data...", Toast.LENGTH_SHORT).show();
                 }else{
-                    Intent Y=new Intent(getApplicationContext(),Homepage.class);
-                    startActivity(Y);
-                    Toast.makeText(login.this, "Login Successful...", Toast.LENGTH_SHORT).show();
+
+                   Log.d("TAG","getCustomer called");
+
+
+                        Intent Y=new Intent(getApplicationContext(),Homepage.class);
+                        startActivity(Y);
+                        Toast.makeText(login.this, "Login Successful...", Toast.LENGTH_SHORT).show();
+
+
+
+
+
+
                 }
             }
         });

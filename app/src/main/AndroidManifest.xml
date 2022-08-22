@@ -35,7 +35,7 @@
             android:name=".DairyAndDrinks"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name=".adminpag"
             android:exported="false" />
         <activity
             android:name=".ConfirmOrder"
@@ -44,7 +44,7 @@
             android:name=".ProductDetails"
             android:exported="false" />
         <activity
-            android:name=".adminpag"
+            android:name=".login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

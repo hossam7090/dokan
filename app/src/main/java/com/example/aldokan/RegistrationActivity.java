@@ -13,7 +13,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.example.aldokan.Tables.CustomersDB;
+
 public class RegistrationActivity extends AppCompatActivity {
+
+    public Database db ;
 
     Button regist;
     EditText first , last , email , date;
@@ -26,6 +30,7 @@ public class RegistrationActivity extends AppCompatActivity {
         last = findViewById(R.id.te_lastname);
         email = findViewById(R.id.et_regemail);
         date = findViewById(R.id.et_date);
+        db = new Database(this);
 
         gender = findViewById(R.id.rg_gender);
 
@@ -38,13 +43,24 @@ public class RegistrationActivity extends AppCompatActivity {
                 String l = last.getText().toString();
                 String e = email.getText().toString();
                 String d = date.getText().toString();
+                String g = "female";
+                if(gender.getCheckedRadioButtonId()==R.id.rd_male)
+                     g = "male";
 
+                CustomersDB customer = new CustomersDB(f,l,e,d,g);
                 if(f.isEmpty()||l.isEmpty()||e.isEmpty()||d.isEmpty()||gender.getCheckedRadioButtonId()==-1){
                     Toast.makeText(RegistrationActivity.this, "Please, complete your data...", Toast.LENGTH_SHORT).show();
                 }else {
-                    Intent registrationTomain = new Intent(RegistrationActivity.this, login.class);
-                    startActivity(registrationTomain);
-                    Toast.makeText(RegistrationActivity.this, "Registration successful !", Toast.LENGTH_SHORT).show();
+                    db.insertCustomer(customer);
+
+                    if(db.insertCustomer(customer)) {
+                        Toast.makeText(RegistrationActivity.this, "Registration successful !", Toast.LENGTH_SHORT).show();
+                        Intent registrationTomain = new Intent(RegistrationActivity.this, login.class);
+                        startActivity(registrationTomain);
+                    }
+                    else
+                        Toast.makeText(RegistrationActivity.this, "not successful !", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });
